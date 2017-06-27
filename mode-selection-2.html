@@ -1,5 +1,6 @@
 <link rel="import" href="../lrndesign-animationctrl/lrndesign-animationctrl.html">
 <link rel="import" href="../greensock-cdn/greensock-cdn.html">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
 <dom-module id="mode-selection-2">
     <template>
@@ -7,11 +8,30 @@
              :host {
                 display: block;
             }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Open Sans', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: #6D6E71;
+                text-align: center;
+            }
+
+            p {
+                font-family: 'Open Sans', sans-serif;
+            }
         </style>
 
+        <h1>Modes of Selection</h1>
+
         <lrndesign-animationctrl>
-            <lrndesign-animationctrl-button name="play" icon="media"></lrndesign-animationctrl-button>
-            <lrndesign-animationctrl-button name="replay" icon="media"></lrndesign-animationctrl-button>
+            <lrndesign-animationctrl-button name="play" icon="play"></lrndesign-animationctrl-button>
+            <lrndesign-animationctrl-button name="replay" icon="replay"></lrndesign-animationctrl-button>
         </lrndesign-animationctrl>
 
         <h1>Directional</h1>
@@ -62,7 +82,7 @@
                     <tspan x="13.89" y="28.8">Favors an Extreme</tspan>
                 </text>
             </g>
-            </svg>
+        </svg>
     </template>
 
     <script>
